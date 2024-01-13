@@ -1,0 +1,12 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "net.ornithemc.mixintrace.mixin",
+  "compatibilityLevel": "JAVA_8",
+  "mixins": [
+    "CrashReportMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

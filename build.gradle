@@ -7,7 +7,7 @@ plugins {
 base {
 	archivesName = project.archives_base_name
 }
-version = "${project.version}+mc${project.minecraft_version}"
+version = "${project.version}+mc1.6.1-1.14.4"
 group = project.maven_group
 
 repositories {
@@ -24,12 +24,8 @@ dependencies {
 		mappings "net.ornithemc:feather:${project.minecraft_version}+build.${project.feather_build}:v2"
 		addLayer ploceus.nestedMappings() // remove this line if not using nests
 	}
-	nests "net.ornithemc:nests:${project.minecraft_version}+build.${project.nests_build}" // remove this line if not using nests
 
 	modImplementation "net.fabricmc:fabric-loader:${project.loader_version}"
-
-	ploceus.addCommonLibraries()
-	ploceus.dependOsl(project.osl_version)
 }
 
 processResources {
